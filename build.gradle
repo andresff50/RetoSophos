@@ -1,0 +1,24 @@
+plugins {
+    id 'java'
+}
+
+group 'com.reto'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile('net.serenity-bdd:serenity-junit:2.0.77')
+    compile('net.serenity-bdd:serenity-core:2.0.77')
+    compile('net.serenity-bdd:serenity-cucumber4:1.0.21')
+    compile('net.serenity-bdd:serenity-screenplay:2.0.77')
+    compile('net.serenity-bdd:serenity-screenplay-webdriver:2.0.77')
+
+    testCompile('junit:junit:4.12')
+    testCompile('org.slf4j:slf4j-simple:1.7.7')
+}
