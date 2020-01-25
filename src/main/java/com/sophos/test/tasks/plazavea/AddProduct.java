@@ -1,28 +1,26 @@
 package com.sophos.test.tasks.plazavea;
 
+import com.sophos.test.interactions.plazavea.GoToProductDetail;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
 
-import static com.sophos.test.userinterfaces.plazavea.HomePage.*;
-import static com.sophos.test.userinterfaces.plazavea.ProductList.BTN_ADD_PRODUCT;
-import static com.sophos.test.userinterfaces.plazavea.ProductList.LNK_ENTER_THE_PRODUCT;
+import static com.sophos.test.userinterfaces.plazavea.ProductList.*;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 
 public class AddProduct implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {
+        actor.attemptsTo(GoToProductDetail.onScreen());
+        actor.remember("dataSkuProduct", INFO_PRODUCT_DATASKU.resolveFor(actor).getAttribute("value"));
         actor.attemptsTo(
-            Click.on(BTN_NO_POPOVER),
-            Click.on(BTN_CLOSE_POPUP),
-            Click.on(LIST_NAVBAR_ELECTROYHOGAR),
-            Click.on(SELECT_TVLED_CATEGORY),
-            Click.on(LNK_ENTER_THE_PRODUCT),
-            Click.on(BTN_ADD_PRODUCT)
+                Click.on(BTN_ADD_PRODUCT),
+                Click.on(BTN_SHOPPING_CART)
         );
+        actor.remember("dataSkuShoppingCart", INFO_PRODUCT_SHOPPING_CART.resolveFor(actor).getAttribute("data-sku"));
     }
 
-    public static AddProduct toShoppingCart(){
+    public static AddProduct toShoppingCart() {
         return instrumented(AddProduct.class);
     }
 }

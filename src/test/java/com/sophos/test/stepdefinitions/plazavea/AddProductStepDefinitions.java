@@ -1,5 +1,6 @@
 package com.sophos.test.stepdefinitions.plazavea;
 
+import com.sophos.test.questions.plazavea.ValidateAddedProduct;
 import com.sophos.test.tasks.plazavea.AddProduct;
 import com.sophos.test.tasks.plazavea.OpenPage;
 import cucumber.api.java.Before;
@@ -9,13 +10,14 @@ import cucumber.api.java.en.When;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
 
+import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static net.serenitybdd.screenplay.actors.OnStage.setTheStage;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 
 public class AddProductStepDefinitions {
 
     @Before
-    public void InitialConfiguration(){
+    public void InitialConfiguration() {
         setTheStage(new OnlineCast());
         OnStage.theActorCalled("The client");
     }
@@ -32,7 +34,7 @@ public class AddProductStepDefinitions {
 
     @Then("Verify that the product was added")
     public void verifyThatTheProductWasAdded() {
-
+        theActorInTheSpotlight().should(seeThat(ValidateAddedProduct.toCart()));
     }
 
 }
