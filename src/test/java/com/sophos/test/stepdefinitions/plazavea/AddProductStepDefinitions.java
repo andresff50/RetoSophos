@@ -1,6 +1,7 @@
-package com.reto.automatizacion.stepdefinitions.plazavea;
+package com.sophos.test.stepdefinitions.plazavea;
 
-import com.reto.automatizacion.tasks.plazavea.OpenPage;
+import com.sophos.test.tasks.plazavea.AddProduct;
+import com.sophos.test.tasks.plazavea.OpenPage;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -26,6 +27,7 @@ public class AddProductStepDefinitions {
 
     @When("Add a product to the shopping cart")
     public void addAProductToTheShoppingCart() {
+        theActorInTheSpotlight().wasAbleTo(AddProduct.toShoppingCart());
     }
 
     @Then("Verify that the product was added")
