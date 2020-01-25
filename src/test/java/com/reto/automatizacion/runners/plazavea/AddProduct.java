@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/resources/com/reto/automatizacion/plazavea/buy_product.feature",
         tags = {"@AddToCart"},
-        glue = "stepdefinitions",
+        glue = "com.reto.automatizacion.stepdefinitions",
         snippets = SnippetType.CAMELCASE
 )
 public class AddProduct {
