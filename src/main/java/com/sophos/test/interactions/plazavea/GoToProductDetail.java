@@ -6,7 +6,6 @@ import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.waits.WaitUntil;
 
 import static com.sophos.test.userinterfaces.plazavea.HomePage.*;
-import static com.sophos.test.userinterfaces.plazavea.HomePage.SELECT_TVLED_CATEGORY;
 import static com.sophos.test.userinterfaces.plazavea.ProductList.LNK_ENTER_THE_PRODUCT;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisible;
@@ -24,7 +23,7 @@ public class GoToProductDetail implements Interaction {
         );
     }
 
-    public static GoToProductDetail onScreen(){
+    public static GoToProductDetail onScreen() {
         return instrumented(GoToProductDetail.class);
     }
 }

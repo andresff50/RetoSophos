@@ -28,6 +28,10 @@ dependencies {
     compile('net.serenity-bdd:serenity-screenplay:2.0.77')
     compile('net.serenity-bdd:serenity-screenplay-webdriver:2.0.77')
 
+    compile group: 'net.serenity-bdd', name: 'serenity-screenplay-rest', version: '2.0.9'
+
+    testCompile group: 'org.assertj', name: 'assertj-core', version: '3.8.0'
     testCompile('junit:junit:4.12')
     testCompile('org.slf4j:slf4j-simple:1.7.7')
 }
+gradle.startParameter.continueOnFailure = true
