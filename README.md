@@ -1,6 +1,6 @@
 # Reto Sophos
 - Automatización en página Plazavea
-- Automatización Servicio REST API Gores  
+- Automatización Servicio REST API Gorest  
 ### Tecnologías implementadas
 - SerenityBDD
 - Screenplay
@@ -12,6 +12,7 @@
 Se desarrolla una automatización para agregar un producto al carrito en la página plazavea
 ### Instrucciones de uso
 - Clonar el proyecto y abrir con cualquier editor o IDE.  
+- Descargar las dependencias
 - Por default en el serenity.properties webdriver.chrome.driver está asignado al driver de Windows, considere la modificación de esta ruta si desea
 ejecutarlo en otro sistema operativo
 ## Automatización gorest API
