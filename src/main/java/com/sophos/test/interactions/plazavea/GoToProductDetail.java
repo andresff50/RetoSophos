@@ -10,6 +10,10 @@ import static com.sophos.test.userinterfaces.plazavea.ProductList.LNK_ENTER_THE_
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisible;
 
+/**
+ * This is a class that performs the flow of going to the detail of a product
+ * @author Andres Villalba
+ */
 public class GoToProductDetail implements Interaction {
     @Override
     public <T extends Actor> void performAs(T actor) {

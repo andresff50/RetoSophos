@@ -12,5 +12,8 @@ import org.junit.runner.RunWith;
         glue = "com.sophos.test.stepdefinitions",
         snippets = SnippetType.CAMELCASE
 )
+/**
+ * @author Andres Villalba
+ */
 public class GetClient {
 }

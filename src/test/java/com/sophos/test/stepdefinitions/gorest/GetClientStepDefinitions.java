@@ -18,7 +18,10 @@ import static net.serenitybdd.screenplay.actors.OnStage.setTheStage;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.Matchers.notNullValue;
-
+/**
+ * This class contains the steps for gorest API certification.
+ * @author Andres Villalba
+ */
 public class GetClientStepDefinitions {
 
     private ClientData clientData;

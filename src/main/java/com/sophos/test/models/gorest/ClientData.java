@@ -1,5 +1,9 @@
 package com.sophos.test.models.gorest;
 
+/**
+ * This is a model class to hold client information
+ * @author Andres Villalba
+ */
 public class ClientData {
     private String id;
     private String first_name;

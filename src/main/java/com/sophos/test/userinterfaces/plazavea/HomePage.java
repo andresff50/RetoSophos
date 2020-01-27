@@ -5,6 +5,10 @@ import net.thucydides.core.annotations.DefaultUrl;
 import net.thucydides.core.pages.PageObject;
 import org.openqa.selenium.By;
 
+/**
+ * This class contains the mappings of the web elements of the home page
+ * @author Andres Villalba
+ */
 @DefaultUrl("https://www.plazavea.com.pe/")
 public class HomePage extends PageObject {
     public static final Target BTN_NO_POPOVER = Target.the("popover dialog")

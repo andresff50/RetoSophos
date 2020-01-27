@@ -7,6 +7,10 @@ import net.serenitybdd.screenplay.rest.abiities.CallAnApi;
 
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 
+/**
+ * This class performs the request and calls the GetUsersRequest interaction.
+ * @author Andres Villalba
+ */
 public class MakeRequest implements Task {
     private final String restApiUrl = "https://gorest.co.in/public-api";
     private String token;

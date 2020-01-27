@@ -8,6 +8,10 @@ import net.serenitybdd.screenplay.rest.interactions.Get;
 
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 
+/**
+ * This is a class to get Users information in a json format
+ * @author Andres Villalba
+ */
 public class GetUsersRequest implements Interaction {
     private final String token;
 

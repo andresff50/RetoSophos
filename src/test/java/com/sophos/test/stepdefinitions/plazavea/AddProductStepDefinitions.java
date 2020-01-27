@@ -14,6 +14,10 @@ import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static net.serenitybdd.screenplay.actors.OnStage.setTheStage;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 
+/**
+ * This class contains the steps for the certification of the case to add a product to the cart.
+ * @author Andres Villalba
+ */
 public class AddProductStepDefinitions {
 
     @Before

@@ -8,6 +8,10 @@ import net.serenitybdd.screenplay.actions.Click;
 import static com.sophos.test.userinterfaces.plazavea.ProductList.*;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 
+/**
+ * This class performs the task of adding a product to the shopping cart
+ * @author Andres Villalba
+ */
 public class AddProduct implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {

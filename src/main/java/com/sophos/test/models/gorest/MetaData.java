@@ -1,5 +1,9 @@
 package com.sophos.test.models.gorest;
 
+/**
+ * This is a class to store the information meta of the request.
+ * @author Andres Villalba
+ */
 public class MetaData {
     private Boolean success;
     private Integer code;

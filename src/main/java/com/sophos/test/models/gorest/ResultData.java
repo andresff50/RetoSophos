@@ -2,6 +2,10 @@ package com.sophos.test.models.gorest;
 
 import java.util.List;
 
+/**
+ * This class contains the entire body of the request.
+ * @author Andres Villalba
+ */
 public class ResultData {
     private MetaData _metaData;
     private List<ClientData> result = null;

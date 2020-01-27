@@ -3,6 +3,10 @@ package com.sophos.test.userinterfaces.plazavea;
 import net.serenitybdd.screenplay.targets.Target;
 import org.openqa.selenium.By;
 
+/**
+ * This class contains the mappings of the web elements from page product detail and shopping cart
+ * @author Andres Villalba
+ */
 public class ProductList {
     public static final Target LNK_ENTER_THE_PRODUCT = Target.the("Add product TV Led")
             .located(By.xpath("//div[@data-prod='50461']//child::a[@class='Showcase__name']"));

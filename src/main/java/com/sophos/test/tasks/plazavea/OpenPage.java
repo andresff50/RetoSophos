@@ -7,6 +7,10 @@ import net.serenitybdd.screenplay.actions.Open;
 
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 
+/**
+ * this class performs the task to open the page plazavea.com.pe
+ * @author Andres Villalba
+ */
 public class OpenPage implements Task {
     private HomePage homepage;
 
